@@ -1,0 +1,26 @@
+{
+  "name": "font-logos",
+  "description": "An icon font providing popular linux distros' logos",
+  "version": "1.0.0",
+  "style": "assets/font-logos.css",
+  "authors": [
+    "Lukas W (https://github.com/Lukas-W)"
+  ],
+  "license": "Unlicense",
+  "homepage": "https://github.com/Lukas-W/font-logos",
+  "repository": "https://github.com/Lukas-W/font-logos.git",
+  "scripts": {
+    "build": "make"
+  },
+  "files": [
+    "assets/font-logos.css",
+    "assets/font-logos.ttf",
+    "assets/font-logos.woff",
+    "assets/font-logos.woff2",
+    "vectors/*",
+    "README.md"
+  ],
+  "devDependencies": {
+    "nunjucks": "^3.2.3"
+  }
+}

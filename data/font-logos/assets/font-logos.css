@@ -1,0 +1,216 @@
+@font-face {
+  font-display: auto;
+  font-family: "font-logos";
+  font-style: normal;
+  font-weight: normal;
+  src:url("font-logos.woff?v=1.0.0") format("woff"),url("font-logos.woff2?v=1.0.0") format("woff2"),url("font-logos.ttf?v=1.0.0") format("truetype")}
+
+.fl-alpine::before, 
+.fl-aosc::before, 
+.fl-apple::before, 
+.fl-archlinux::before, 
+.fl-centos::before, 
+.fl-coreos::before, 
+.fl-debian::before, 
+.fl-devuan::before, 
+.fl-docker::before, 
+.fl-elementary::before, 
+.fl-fedora::before, 
+.fl-fedora-inverse::before, 
+.fl-freebsd::before, 
+.fl-gentoo::before, 
+.fl-linuxmint::before, 
+.fl-linuxmint-inverse::before, 
+.fl-mageia::before, 
+.fl-mandriva::before, 
+.fl-manjaro::before, 
+.fl-nixos::before, 
+.fl-opensuse::before, 
+.fl-raspberry-pi::before, 
+.fl-redhat::before, 
+.fl-sabayon::before, 
+.fl-slackware::before, 
+.fl-slackware-inverse::before, 
+.fl-tux::before, 
+.fl-ubuntu::before, 
+.fl-ubuntu-inverse::before, 
+.fl-almalinux::before, 
+.fl-archlabs::before, 
+.fl-artix::before, 
+.fl-budgie::before, 
+.fl-deepin::before, 
+.fl-endeavour::before, 
+.fl-ferris::before, 
+.fl-flathub::before, 
+.fl-gnu-guix::before, 
+.fl-illumos::before, 
+.fl-kali-linux::before, 
+.fl-openbsd::before, 
+.fl-parrot::before, 
+.fl-pop-os::before, 
+.fl-rocky-linux::before, 
+.fl-snappy::before, 
+.fl-solus::before, 
+.fl-void::before, 
+.fl-zorin::before
+ {
+  display: inline-block;
+  font-family: "font-logos";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.fl-fw {
+  text-align: center;
+  width: 1em;
+}
+.fl-alpine::before {
+  content: "\f300";
+}
+.fl-aosc::before {
+  content: "\f301";
+}
+.fl-apple::before {
+  content: "\f302";
+}
+.fl-archlinux::before {
+  content: "\f303";
+}
+.fl-centos::before {
+  content: "\f304";
+}
+.fl-coreos::before {
+  content: "\f305";
+}
+.fl-debian::before {
+  content: "\f306";
+}
+.fl-devuan::before {
+  content: "\f307";
+}
+.fl-docker::before {
+  content: "\f308";
+}
+.fl-elementary::before {
+  content: "\f309";
+}
+.fl-fedora::before {
+  content: "\f30a";
+}
+.fl-fedora-inverse::before {
+  content: "\f30b";
+}
+.fl-freebsd::before {
+  content: "\f30c";
+}
+.fl-gentoo::before {
+  content: "\f30d";
+}
+.fl-linuxmint::before {
+  content: "\f30e";
+}
+.fl-linuxmint-inverse::before {
+  content: "\f30f";
+}
+.fl-mageia::before {
+  content: "\f310";
+}
+.fl-mandriva::before {
+  content: "\f311";
+}
+.fl-manjaro::before {
+  content: "\f312";
+}
+.fl-nixos::before {
+  content: "\f313";
+}
+.fl-opensuse::before {
+  content: "\f314";
+}
+.fl-raspberry-pi::before {
+  content: "\f315";
+}
+.fl-redhat::before {
+  content: "\f316";
+}
+.fl-sabayon::before {
+  content: "\f317";
+}
+.fl-slackware::before {
+  content: "\f318";
+}
+.fl-slackware-inverse::before {
+  content: "\f319";
+}
+.fl-tux::before {
+  content: "\f31a";
+}
+.fl-ubuntu::before {
+  content: "\f31b";
+}
+.fl-ubuntu-inverse::before {
+  content: "\f31c";
+}
+.fl-almalinux::before {
+  content: "\f31d";
+}
+.fl-archlabs::before {
+  content: "\f31e";
+}
+.fl-artix::before {
+  content: "\f31f";
+}
+.fl-budgie::before {
+  content: "\f320";
+}
+.fl-deepin::before {
+  content: "\f321";
+}
+.fl-endeavour::before {
+  content: "\f322";
+}
+.fl-ferris::before {
+  content: "\f323";
+}
+.fl-flathub::before {
+  content: "\f324";
+}
+.fl-gnu-guix::before {
+  content: "\f325";
+}
+.fl-illumos::before {
+  content: "\f326";
+}
+.fl-kali-linux::before {
+  content: "\f327";
+}
+.fl-openbsd::before {
+  content: "\f328";
+}
+.fl-parrot::before {
+  content: "\f329";
+}
+.fl-pop-os::before {
+  content: "\f32a";
+}
+.fl-rocky-linux::before {
+  content: "\f32b";
+}
+.fl-snappy::before {
+  content: "\f32c";
+}
+.fl-solus::before {
+  content: "\f32d";
+}
+.fl-void::before {
+  content: "\f32e";
+}
+.fl-zorin::before {
+  content: "\f32f";
+}
