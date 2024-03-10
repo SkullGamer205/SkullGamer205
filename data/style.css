@@ -82,7 +82,7 @@ a {
   padding: 0.1rem 0;
   color: var(--fgColor);
   border: outset var(--fgColor) 4px;
-  box-shadow: 0 0 10px rgb(0,0,0); /* Параметры тени */
+  box-shadow: 0 0 10px rgb(0,0,0);
   padding: 10px;
 }
 
@@ -99,7 +99,7 @@ a {
   padding: 0.1rem 0;
   color: var(--fgColor);
   border: outset var(--fgColor) 4px;
-  box-shadow: 0 0 10px rgb(0,0,0); /* Параметры тени */
+  box-shadow: 0 0 10px rgb(0,0,0);
   padding: 10px;
 }
 
