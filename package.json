@@ -20,9 +20,7 @@
     "start": "run-s watch",
     "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md",
     "build": "npm run clean && run-p build:*",
-    "build:top-bun": "tb",
     "watch": "npm run clean && run-p watch:*",
-    "watch:top-bun": "npm run build:top-bun -- --watch --drafts",
     "clean": "rm -rf public && mkdir -p public"
   },
   "dependencies": {
