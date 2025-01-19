@@ -7,6 +7,27 @@
   "bugs": {
     "url": "https://github.com/SkullGamer205/SkullGamer205/issues"
   },
+  "homepage": "https://github.com/SkullGamer205/SkullGamer205/",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkullGamer205/SkullGamer205.git"
+  },
+  "scripts": {
+    "prepublishOnly": "git push --follow-tags && gh-release",
+    "test": "run-s test:*",
+    "test:lint": "eslint",
+    "start": "run-s watch",
+    "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md",
+    "build": "npm run clean && run-p build:*",
+    "build:top-bun": "tb",
+    "watch": "npm run clean && run-p watch:*",
+    "watch:top-bun": "npm run build:top-bun -- --watch --drafts",
+    "clean": "rm -rf public && mkdir -p public",
+    "new-blogpost": "node scripts/create-blogpost.js --title",
+    "publish-draft": "node scripts/publish-draft.js"
+  },
   "dependencies": {
     "classnames": "^2.3.2",
     "fetch-undici": "^5.0.0",
