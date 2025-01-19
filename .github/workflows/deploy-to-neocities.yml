@@ -25,12 +25,12 @@ jobs:
     - name: Use Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: ${{ env.node_version }}
+        node-version: lts/*
     - run: npm i
     - run: npm run build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
-      uses: bcomnes/deploy-to-neocities@master # dont use master in production
+      uses: bcomnes/deploy-to-neocities@v3 # dont use master in production
       with:
         api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
         cleanup: true
