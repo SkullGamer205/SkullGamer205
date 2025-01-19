@@ -1,7 +1,5 @@
 name: Deploy to Neocities
-  # Don't use master, use a full 40 character commit hash, e.g.,
-  # jonchang/deploy-neocities@deadbeef...
-  uses: jonchang/deploy-neocities@master
+  uses: jonchang/deploy-neocities@e557d8b4aa935cd3e1a437c038bb043c9b4064f6
   with:
     # Required, to access Neocities API.
     # https://neocities.org/settings
