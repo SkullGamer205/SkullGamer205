@@ -1,21 +1,38 @@
-name: Deploy to Neocities
+name: Deploy to neocities
+
+# only run on changes to main. Use main or master depending on whatever your default branch is called.
 on:
   push:
     branches:
-    - main
+      - main
+
+concurrency: # prevent concurrent deploys doing strange things
+  group: deploy-to-neocities
+  cancel-in-progress: true
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    
-steps:
-  uses: jonchang/deploy-neocities@e557d8b4aa935cd3e1a437c038bb043c9b4064f6
-  with:
-    # Required, to access Neocities API.
-    # https://neocities.org/settings
-    # Set in Settings -> Secrets
-    key: ${{ secrets.NEOCITIES_API_KEY }}
-    # Required, local directory to deploy to Neocities
-    dir: _site
-    # Optional, if true, delete remote files not present locally
-    clean: false
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+    # Set up any tools and build steps here
+    # This example uses a Node.js toolchain to build a site
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+    # If you have a different build process, replace this with your own build steps
+    - name: Install deps and build
+      run: |
+        npm i
+        npm run build
+    # When the dist_dir is ready, deploy it to neocities
+    - name: Deploy to neocities
+      uses: bcomnes/deploy-to-neocities@v3
+      with:
+        api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
+        cleanup: false
+        neocities_supporter: false # set this to true if you have a supporter account and want to bypass unsuported files filter.
+        preview_before_deploy: true # print a deployment plan prior to waiting for files to upload.
+        dist_dir: public
