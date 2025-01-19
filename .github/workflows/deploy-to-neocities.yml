@@ -1,4 +1,4 @@
-- name: Deploy to Neocities
+name: Deploy to Neocities
   # Don't use master, use a full 40 character commit hash, e.g.,
   # jonchang/deploy-neocities@deadbeef...
   uses: jonchang/deploy-neocities@master
