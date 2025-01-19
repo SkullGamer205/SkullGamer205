@@ -13,5 +13,6 @@ concurrency: # prevent concurrent deploys doing strange things
 jobs:
   deploy:
     runs-on: ubuntu-latest
+steps:
 - name: Deploy to Neocities
     uses: bcomnes/deploy-to-neocities@v3.0.2
