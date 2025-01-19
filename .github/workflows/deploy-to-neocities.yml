@@ -1,4 +1,14 @@
 name: Deploy to Neocities
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+steps:
   uses: jonchang/deploy-neocities@e557d8b4aa935cd3e1a437c038bb043c9b4064f6
   with:
     # Required, to access Neocities API.
