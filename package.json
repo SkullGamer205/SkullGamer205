@@ -19,9 +19,9 @@
     "test": "run-s test:*",
     "start": "run-s watch",
     "version": "auto-changelog -p --template keepachangelog auto-changelog --breaking-pattern 'BREAKING CHANGE:' && git add CHANGELOG.md",
-    "build": "npm run clean && npm run build:*",
+    "build": "npm run clean && run-p build:*",
     "build:top-bun": "tb",
-    "watch": "npm run clean && npm run watch:*",
+    "watch": "npm run clean && run-p watch:*",
     "watch:top-bun": "npm run build:top-bun -- --watch --drafts",
     "clean": "rm -rf public && mkdir -p public"
   },
@@ -34,5 +34,7 @@
     "p-map": "^7.0.2",
     "uhtml-isomorphic": "^2.0.0",
     "xmlbuilder": "^15.1.1"
+    "node": ">=16.0.0",
+    "npm": ">=8.3.1"
   }
 }
