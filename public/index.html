@@ -11,16 +11,73 @@
         <style>
             html    { height: 100% }
             body {
-                margin              : 0;
-                height              : 100%;
-                /* background  : url(data/images/backgrounds/background.png); */
-                background-size     : cover;
+                
+                height                  : 100%;
+                
+            /* Disable blur */
+                filter                  : none !important;
+                backdrop-filter         : none !important;
+                
+            /* Backbround */
+                background              : url(data/images/backgrounds/background.png);
+                background-size         : cover;
+                
+            /* Flex */
+                display                 : flex;
+                flex-direction          : column;
+                
+            /* Centerify elements */
+                justify-content         : center;
+                align-items             : center;
+                align-content           : center;
+            }
 
+            .main {
+                width                   : 640px;
+                height                  : 480px;
+                /* background-color        : #ff0000; */
+                display                 : flex;
+            }
+
+            .left-closet {
+                width                   : 200px;
+                height                  : 100%;
+                background              : url(data/images/closet/left-side.png);
+                display                 : inline-block;
+                image-rendering         : pixelated;
+            }
+            
+            .middle-closet {
+                width                   : 344px;
+                height                  : 100%;
+                background              : url(data/images/closet/middle.png);
+                display                 : inline-block;
+                image-rendering         : pixelated;
+            }
+            
+            .right-closet {
+                width                   : 96px;
+                height                  : 100%;
+                background              : url(data/images/closet/right-side.png);
+                display                 : inline-block;
+                image-rendering         : pixelated;
             }
         </style>
     </head>
 
     <!-- Body -->
     <body>
+        <!-- Main -->
+        <div class = "main">
+            <!-- Left Closet -->
+            <div class = "left-closet">
+            </div> 
+            <!-- Middle Closet -->
+            <div class = "middle-closet">
+            </div>
+            <!-- Right Closet -->
+            <div class = "right-closet">
+            </div>
+        </div>
     </body>
 </html>
