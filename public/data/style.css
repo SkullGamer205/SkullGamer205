@@ -1,0 +1,30 @@
+#main {
+    width                   : 544px;
+    height                  : 480px;
+    /* background-color        : #ff0000; */
+    display                 : flex;
+}
+
+#left-closet {
+    width                   : 200px;
+    height                  : 100%;
+    background              : url(images/closet/left-side.png);
+    display                 : inline-block;
+    image-rendering         : pixelated;
+}
+
+#middle-closet {
+    width                   : 344px;
+    height                  : 100%;
+    background              : url(images/closet/middle.png);
+    display                 : inline-block;
+    image-rendering         : pixelated;
+}
+
+#right-closet {
+    width                   : 96px;
+    height                  : 100%;
+    background              : url(images/closet/right-side.png);
+    display                 : inline-block;
+    image-rendering         : pixelated;
+}

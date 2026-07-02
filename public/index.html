@@ -9,11 +9,12 @@
 
     <!-- Style -->
         <style>
-            html    { height: 100% }
+            html { height: 100% }
+
             body {
-                
+    
                 height                  : 100%;
-                
+    
             /* Disable blur */
                 filter                  : none !important;
                 backdrop-filter         : none !important;
@@ -31,53 +32,22 @@
                 align-items             : center;
                 align-content           : center;
             }
-
-            .main {
-                width                   : 640px;
-                height                  : 480px;
-                /* background-color        : #ff0000; */
-                display                 : flex;
-            }
-
-            .left-closet {
-                width                   : 200px;
-                height                  : 100%;
-                background              : url(data/images/closet/left-side.png);
-                display                 : inline-block;
-                image-rendering         : pixelated;
-            }
-            
-            .middle-closet {
-                width                   : 344px;
-                height                  : 100%;
-                background              : url(data/images/closet/middle.png);
-                display                 : inline-block;
-                image-rendering         : pixelated;
-            }
-            
-            .right-closet {
-                width                   : 96px;
-                height                  : 100%;
-                background              : url(data/images/closet/right-side.png);
-                display                 : inline-block;
-                image-rendering         : pixelated;
-            }
         </style>
     </head>
 
     <!-- Body -->
     <body>
         <!-- Main -->
-        <div class = "main">
+        <div id = "main">
             <!-- Left Closet -->
-            <div class = "left-closet">
+            <div id = "left-closet">
             </div> 
             <!-- Middle Closet -->
-            <div class = "middle-closet">
+            <div id = "middle-closet">
             </div>
             <!-- Right Closet -->
-            <div class = "right-closet">
-            </div>
+            <!-- <div id = "right-closet"> -->
+            <!-- </div> -->
         </div>
     </body>
 </html>
