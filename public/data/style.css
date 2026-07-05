@@ -1,5 +1,5 @@
 #main {
-    width                   : 544px;
+    width                   : 640px;
     height                  : 480px;
     /* background-color        : #ff0000; */
     display                 : flex;
@@ -22,7 +22,13 @@
     border              : 2px   solid     #9DA9A0;
 }
 
-#left-closet {
+.links-row {
+    display             : flex;
+    flex-direction      : row;
+    justify-content     : center;
+}
+
+#left-side {
     width               : 200px;
     height              : 100%;
     /* background          : url(images/closet/left-side.png); */
@@ -30,21 +36,22 @@
     image-rendering     : pixelated;
 }
 
-#middle-closet {
-    width               : 344px;
+#middle-side {
+    width               : 440px;
     height              : 100%;
     /* background          : url(images/closet/middle.png); */
+    display             : flex;
     display             : inline-block;
     image-rendering     : pixelated;
 }
 
-#right-closet {
-    width               : 96px;
-    height              : 100%;
-    /* background          : url(images/closet/right-side.png); */
-    display             : inline-block;
-    image-rendering     : pixelated;
-}
+/* #right-closet { */
+/*     width               : 96px; */
+/*     height              : 100%; */
+/*     /* background          : url(images/closet/right-side.png); */ */
+/*     display             : inline-block; */
+/*     image-rendering     : pixelated; */
+/* } */
 
 #avatar {
     display             : flex;
@@ -62,7 +69,24 @@
 
 #links {
     width               : 100%;
-    display             : flex;
-    justify-content     : center;
+    vertical-align      : middle;
     image-rendering     : pixelated;
 }
+
+#footer {
+    display             : flex;
+    flex-direction      : row;
+}
+
+#badges {
+    width               : 100%;
+    height              : 64px;
+    image-rendering     : pixelated;
+}
+
+#fediring {
+    width               : 54px;
+    height              : auto;
+    image-rendering     : pixelated;
+}
+
