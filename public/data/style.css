@@ -37,6 +37,12 @@ body {
       color                 : #9DA9A0;
 }
 
+/* Link Color */
+a {
+    color                   : #A7C080;
+}
+
+/* Paragraphs */
 p {
     margin                  : 2px;
     text-indent             : 0px;
@@ -142,6 +148,19 @@ p {
 #bio-short {
     width               : 40%;
     /* height              : 128px; */
+}
+
+#middle-block {
+    display             : flex;
+    /* height              : 27vh; */
+}
+
+#projects {
+    width               : 73%;
+}
+
+#friends {
+    width               : 27%;
 }
 
 #footer {
