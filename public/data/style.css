@@ -174,9 +174,19 @@ p {
     image-rendering     : pixelated;
 }
 
-#fediring {
+#fediring {    
     width               : 38px;
     height              : auto;
     image-rendering     : pixelated;
 }
 
+#fediring-ico {    
+    display             : grid;
+    align-items         : center;
+    justify-content     : center;
+}
+
+#arrow-flipped {
+  transform: scaleX(-1);
+  display: inline-block; /* Required if using inline elements like <i> or <span> */
+}
